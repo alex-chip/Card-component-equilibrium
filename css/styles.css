@@ -47,6 +47,7 @@ img {
   height: 50%;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .Image__container::before,
@@ -62,7 +63,7 @@ img {
   background-color: var(--color-cyan);
   border-radius: 1em;
   transform: translate(-100%, 100%);
-  opacity: .5;
+  opacity: .3;
 }
 
 .Image__container::after {
@@ -89,8 +90,11 @@ img {
   font-size: 1em;
 }
 
-.Card__title:hover {
+/* Estado hover del titulo de la card y nombre del usuario */
+.Card__title:hover,
+.User__name span:hover {
   color: var(--color-cyan);
+  cursor: pointer;
 }
 
 .Card__description {
@@ -151,8 +155,4 @@ img {
 
 .User__name span {
   color: var(--color-white);
-}
-
-.User__name span:hover {
-  color: var(--color-cyan);
 }
